@@ -10,7 +10,7 @@ function App() {
       {/* <h1>Clone Twitter</h1> */}
       <Route path="/" element={ <Layout /> }>
         <Route index element={ <Home /> } />
-        <Route path="/profile:username" element={ <Profile /> } />
+        <Route path="/profile/:username" element={ <Profile /> } />
       </Route>
       <Route path="/*" element={ <NotFound /> } />
     </Routes>
